@@ -1,0 +1,52 @@
+.Menu
+	display block
+	&-list
+		list-style none
+		margin 0
+		padding 0
+		display none
+		transition 3s
+		&.isActiveMenu
+			display block
+	&-item
+		cursor pointer
+		margin 0
+		padding 0
+		display block
+	&-link
+		display block
+		text-align center
+		padding 1em 0
+		text-decoration none
+		text-transform Uppercase
+		color upCafe
+		border-bottom 1px solid rgba(50, 50, 50, 0.3)
+		&:hover
+			background upCafe
+			color white
+@media screen and (min-width 768px)
+	.Menu
+		&-list
+			display initial
+			position absolute
+			top 1.8em
+			right 1em
+		&-item
+			display inline-block
+		&-link
+			border-bottom initial
+			padding 1em
+			font-family 'Titillium Web', sans-serif
+			font-weight 600
+			&:before
+				margin-right .5em
+			&:hover
+				border-bottom 3px solid upCafe
+				background initial
+				color upCafe
+		&-access
+				display none
+@media screen and (min-width 900px)
+		.Menu
+			&-access
+				display block

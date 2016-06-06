@@ -3,7 +3,9 @@ header(class="Header")
 		figure(class="Header-figure")
 			img(class="Header-logo", src="../public/images/logos/Upcafe.png", alt="Upcafe MX")
 		div(class="Header-contact")
-			span(class="Header-span Header-phone") Tel: 5347-1644 / 5347-1632
-			span(class="Header-span Header-email") Mail: ventas@upcafe.mx
+			a(class="Header-span Header-phone", href="tel:5553471644") Tel: 5347-1644
+			span(class="Header-span") /
+			a(class="Header-span Header-phone", href="tel:5553471632") 5347-1632
+			a(class="Header-span Header-email", href="mailto:ventas@upcafe.mx") Mail: ventas@upcafe.mx
 		div(class="Header-ButtonContainer")
-			button(class="Header-mobileButton isActiveMenuButton", id="showMenu")
+			button(class="Header-mobileButton", id="showMenu")

@@ -4,11 +4,11 @@ $('button').on('click', function() {
 });
 
 /*	Show and hide mobile menu.	*/
-// $(function () {
-//     var buttonMobile =  $(".Menu-mobileButton"),
-//         menu         =  $(".Menu-list");
-//     buttonMobile.on('click', function (e) {
-//         e.preventDefault();
-//         menu.toggleClass('isActiveMenu');
-//     });
-// });
+$(function () {
+    var buttonMobile =  $(".Header-mobileButton"),
+        menu         =  $(".Menu-list");
+    buttonMobile.on('click', function (e) {
+        e.preventDefault();
+        menu.toggleClass('isActiveMenu');
+    });
+});

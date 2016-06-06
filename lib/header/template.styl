@@ -1,26 +1,20 @@
 .Header
 	width 100%
-	border 1px solid red
+	position relative
+	border-top 5px solid upCafe
+	box-shadow 0 4px 9px 0 rgba(50, 50, 50, 0.3)
+	display block
 	&-container
-		border 1px solid green
-		margin .5em
+		margin .2em .5em
 		position relative
 	&-figure
-		border 1px solid blue
 		margin 0
 		padding 0
 		display inline-block
 	&-logo
-		width 50px
+		width 55px
 	&-contact
-		display inline-block
-		position absolute
-		top 0
-		right 0
-		border 1px solid black
 		display none
-	&-span
-		margin 0 1em
 	&-ButtonContainer
 		display inline-block
 		float right
@@ -57,3 +51,23 @@
 		transform rotateZ(45deg)
 	&::before
 		transform rotateZ(-45deg)
+
+@media screen and (min-width 768px)
+	.Header
+		&-contact
+			display inline-block
+			position absolute
+			top 0em
+			right 1em
+		&-logo
+			margin-left 1em
+		&-span
+			color upCafe
+			margin 0 .2em
+			text-decoration none
+			font-family 'Titillium Web', sans-serif
+			font-weight 600
+		&-email
+			margin-left 2em
+		&-ButtonContainer
+			display none
