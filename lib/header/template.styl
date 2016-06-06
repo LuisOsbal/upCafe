@@ -1,0 +1,59 @@
+.Header
+	width 100%
+	border 1px solid red
+	&-container
+		border 1px solid green
+		margin .5em
+		position relative
+	&-figure
+		border 1px solid blue
+		margin 0
+		padding 0
+		display inline-block
+	&-logo
+		width 50px
+	&-contact
+		display inline-block
+		position absolute
+		top 0
+		right 0
+		border 1px solid black
+		display none
+	&-span
+		margin 0 1em
+	&-ButtonContainer
+		display inline-block
+		float right
+		margin .5em 0
+	&-mobileButton
+		background-color transparent
+		border 0
+		border-bottom .30em solid upCafe
+		border-top .30em solid upCafe
+		cursor pointer
+		font-size 1em
+		height 1.5em
+		margin 1em
+		outline 0
+		position relative
+		width 2.5em
+		line-height 3.5em
+		float right
+		&::after,
+		&::before
+			border-bottom .25em solid upCafe
+			bottom .375em
+			content ''
+			height 0
+			left 0
+			position absolute
+			right 0
+.isActive
+	border-color transparent
+	&::after,
+	&::before
+		transition transform 200ms ease-out
+	&::after
+		transform rotateZ(45deg)
+	&::before
+		transform rotateZ(-45deg)
